@@ -80,7 +80,7 @@ To blink both LEDs, you need to forever:
 ### Do it yourself
 Now use everything you've learned today to program a version of the traffic lights. Make the lights switch from red to green and the other way with buttons!
 
-## Answers
+## Answers @showDialog
 ```hint
 ```
 ### Challenge
@@ -95,7 +95,7 @@ basic.forever(function () {
 })
 ```
 
-### Do it yourself @showDialog
+### Do it yourself
 Your code can be something like this:
 ```blocks
 pins.digitalWritePin(DigitalPin.P1, 1)
