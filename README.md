@@ -54,7 +54,7 @@ That means that your Micro:bit now outputs power through this pin.
 
 ## Step 6 @showHint
 ### Flashing LEDs
-Now, it's time to make our LED flash! Modify our code as shown to make Micro:bit turn the pin 0 on and off repeatedly, then 
+Now, it's time to make our LED flash! Modify our code as shown to make Micro:bit turn the pin 0 on and off repeatedly, then download your code to Micro:bit.
 ```blocks
 basic.forever(function () {
     pins.digitalWritePin(DigitalPin.P0, 1)
