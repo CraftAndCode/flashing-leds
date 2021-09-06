@@ -81,8 +81,7 @@ To blink both LEDs, you need to forever:
 Now use everything you've learned today to program a version of the traffic lights. Make the lights switch from red to green and the other way with buttons!
 
 ## Answers @showDialog
-```hint
-```
+
 ### Challenge
 ```blocks
 basic.forever(function () {
