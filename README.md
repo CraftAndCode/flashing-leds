@@ -82,7 +82,7 @@ Now use everything you've learned today to program a version of the traffic ligh
 
 ## Answers @showDialog
 
-### Challenge
+### Answer: Challenge
 ```blocks
 basic.forever(function () {
     pins.digitalWritePin(DigitalPin.P0, 1)
@@ -94,7 +94,7 @@ basic.forever(function () {
 })
 ```
 
-### Do it yourself
+### Answer: Do it yourself
 Your code can be something like this:
 ```blocks
 pins.digitalWritePin(DigitalPin.P1, 1)
