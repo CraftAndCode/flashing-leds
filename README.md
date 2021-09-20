@@ -7,17 +7,16 @@ microphone
 ```
 ```template
 basic.forever(function () {
-	
+    
 })
 ```
 
 ## Step 0 @showDialog
-Hello! With this tutorial, you'll learn to control external LEDs with Micro:bit!
+Hello! In this tutorial, you'll learn to control the external LEDs with your Micro:bit!
 
 ## Step 1 @showDialog
-Before we start, let's make sure that your LEDs are connected to the Micro:bit according to this schematic:
+Before we start, let's make sure that your LEDs are connected to the Micro:bit as shown in this schematic:
 ![](https://raw.githubusercontent.com/CraftAndCode/mood-badge/master/mood%20badge%20schematic.gif)
-
 
 ## Step 2 @showHint
 ### Turning LEDs on
@@ -31,7 +30,7 @@ pins.digitalWritePin(DigitalPin.P0, 0)
 ## Step 3 @showDialog
 The Micro:bit has 25 external connections on the edge connector of the board, which we call 'pins'.
   
-There are five large pins, that are also connected to holes in the board labelled: 0, 1, 2, 3V, and GND. The ``||pins.digital write pin||`` block can be used to turn the LEDs connected to the pins on your Micro:bit on and off.
+There are five large pins that are also connected to holes in the board labelled: 0, 1, 2, 3V, and GND. The ``||pins.digital write pin||`` block can be used to turn the LEDs connected to the pins on your Micro:bit on and off.
 
 ## Step 4 @showHint
 ### Turning LEDs on
@@ -45,16 +44,16 @@ basic.forever(function () {
 
 ## Step 5 @showHint
 ### Turning LEDs on
-The MakeCode simulator has no idea if your Micro:bit has LEDs connected, so it doesn't display them. Let's download your program to check if they light up!
+The MakeCode simulator has no idea whether your Micro:bit has LEDs connected, so it doesn't display them. Let's download your program to check if they light up!
 ```hint
-As you see, the pin labelled `0` is now highlighted. 
-That means that your Micro:bit now outputs power through this pin.
+As you can see, the pin labelled `0` is now highlighted. 
+That means that your Micro:bit is now putting out power through this pin.
 ```
 ![](https://raw.githubusercontent.com/CraftAndCode/mood-badge/master/LED0.png)
 
 ## Step 6 @showHint
 ### Flashing LEDs
-Now, it's time to make our LED flash! Modify the code as shown to make Micro:bit turn the pin 0 on and off repeatedly, then download your code to Micro:bit.
+Now, it's time to make our LED flash! Modify the code as shown to make the Micro:bit turn  pin 0 on and off repeatedly, then download your code to Micro:bit.
 ```blocks
 basic.forever(function () {
     pins.digitalWritePin(DigitalPin.P0, 1)
@@ -65,20 +64,20 @@ basic.forever(function () {
 ```
 ## Step 7
 ### Challenge
-It's time for a challenge! Your task is to modify the code to blink 2 LEDs simultaneously.
+It's time for a challenge! Your task is to modify the code to make 2 LEDs blink at the same time.
 ```hint
-To blink both LEDs, you need to forever: 
+To make both LEDs blink, you need to forever: 
 ```
 * Turn the pin 0 on,
 * Turn the pin 1 on,
-* Wait for some time,
+* Wait for a time,
 * Turn the pin 0 off,
 * Turn the pin 1 off,
-* Wait for some time again.
+* Wait for a time again.
 
 ## Step 8
 ### Do it yourself
-Now use everything you've learned today to program a version of the traffic lights. Make the lights switch from red to green and the other way with buttons!
+Now use everything you've learned today to program a version of traffic signals. Make the lights switch from red to green and back again using the buttons!
 
 ## Answers @showDialog
 
@@ -107,4 +106,3 @@ input.onButtonPressed(Button.B, function () {
     pins.digitalWritePin(DigitalPin.P1, 1)
 })
 ```
-
